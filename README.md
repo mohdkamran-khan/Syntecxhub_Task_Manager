@@ -20,49 +20,108 @@ Allows users to create, view, update, delete and search events. Has user authent
 ## 📸 Screenshots
 
 - Home:
-<img width="2260" height="1930" alt="localhost_5173_ (1)" src="https://github.com/user-attachments/assets/f98c48e6-87d6-4813-b9f9-b21f10d961e8" />
+<img width="2104" height="1500" alt="taskhome" src="https://github.com/user-attachments/assets/638471e7-0e91-4ae5-9f1e-54fa34524837" />
 
 ---
 
 - Login:
-<img width="2260" height="1896" alt="localhost_5173_login" src="https://github.com/user-attachments/assets/cabaebf3-af6a-427b-82e4-17b7709a8c31" />
+<img width="2104" height="1286" alt="tasklogin" src="https://github.com/user-attachments/assets/47d196f9-695c-486c-8f42-c9bea49da8f6" />
 
 ---
 
 - Register:
-<img width="2260" height="1896" alt="localhost_5173_login (1)" src="https://github.com/user-attachments/assets/18aba2a7-fb5b-43fc-b19d-354558165415" />
+<img width="2104" height="1286" alt="taskregister" src="https://github.com/user-attachments/assets/3b653daf-a69c-49ef-8252-4793907f6eff" />
 
 ---
 
 - Add Task:
-<img width="2260" height="1896" alt="localhost_5173_login (2)" src="https://github.com/user-attachments/assets/813f5291-8175-44df-b92c-e1ed8cbfd1e8" />
+<img width="2104" height="1746" alt="add-task" src="https://github.com/user-attachments/assets/5e6e387a-33c5-4bb4-ab4f-1b0632801ace" />
 
 ---
 
 - View Task:
-<img width="2260" height="1930" alt="localhost_5173_login (3)" src="https://github.com/user-attachments/assets/de3a2275-f6b6-4d02-83b9-b6144184e771" />
+<img width="2104" height="1500" alt="viewtask" src="https://github.com/user-attachments/assets/af83c072-8416-4cd4-9a4c-001e2f45ede1" />
 
 ---
 
 - Edit Task:
-<img width="2880" height="2372" alt="localhost_5173_ (2)" src="https://github.com/user-attachments/assets/901ed9dc-c7c2-4866-b820-5c737770d041" />
+<img width="2104" height="1500" alt="updatetask" src="https://github.com/user-attachments/assets/395b1f33-391f-4525-80d6-d58548e5bed7" />
 
 ---
 
 - Search:
-<img width="2580" height="1898" alt="localhost_5173_ (3)" src="https://github.com/user-attachments/assets/a311f262-da7f-42b5-9e7f-cf8e82583d1e" />
+<img width="2104" height="1500" alt="searchtask" src="https://github.com/user-attachments/assets/f8d4c7a0-ccdd-4fd1-8f2e-58ae30e7bca1" />
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React (with Formik & Yup), React Router  
-- **Backend**: Node.js, Express  
+- **Frontend**: React, React Router  
+- **Backend**: Node.js, Express.js  
 - **Database**: MongoDB (via Mongoose)  
 - **State / Context**: React Context API  
-- **Styling**: Tailwind CSS (and CSS / Icons)  
+- **Styling**: Tailwind CSS and Lucide Icons  
 - **Authentication**: Basic (login/register) using user IDs as tokens 
 - **Dev tools**: Axios for HTTP requests, React Toastify for notifications  
+
+---
+
+## Project Structure
+
+```pgsql
+
+Syntecxhub_Task_Manager
+├── BACKEND
+│   ├── public
+│   └── src
+│   │   ├── models
+│   │   ├── Event.model.js
+│   │   └── User.model.js
+│   ├── app.js
+│   ├── db.config.js
+│   └── routes.js
+│
+├── .env
+├── index.js
+├── package.json 
+   
+├── FRONTEMD
+│   ├── src
+│   ├── components
+│   │   ├── EventCard.jsx
+│   │   ├── EventUpdateView.jsx
+│   │   ├── EventView.jsx
+│   │   ├── EventViewModel.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Loader.jsx
+│   │   ├── LoaderComponent.jsx
+│   │   ├── Logo.jsx
+│   │   └── Navbar.jsx
+│   ├── context
+│   │   └── MainContext.jsx
+│   ├── layout
+│   │   └── ProtectedLayout.jsx
+│   ├── Pages
+│   │   ├── AddEvent.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Error.jsx
+│   │   ├── Login.jsx
+│   │   └── Register.jsx
+│   ├── utils
+│   │   ├──axiosClient.js
+│   │   └── constants.js
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── event.png
+├── index.html
+├── package.json
+└── README.md
+
+```
 
 ---
 
@@ -79,31 +138,42 @@ Follow these steps to get the project running locally:
 
 ### Clone & Setup
 
-1. Clone the repository  
+### 1️⃣ Clone the repository  
    ```bash
-   git clone https://github.com/mohdkamran-khan/Mini-Event-Tracker.git
-   
-2. Change directory to project
-cd Mini-Event-Tracker
+   git clone https://github.com/mohdkamran-khan/Syntecxhub_Task_Manager.git
+   ```
 
-3. Install backend dependencies
+### 2️⃣ Change directory to project
+```bash
+cd Syntecxhub_Task_Manager
+```
+
+### 3️⃣ Install backend dependencies
+```bash
 cd BACKEND
 npm install
-
-4. Create a .env file in BACKEND:
+```
+### 4️⃣ Create a .env file in BACKEND:
+```env
 PORT=4500
 MONGO_URI=your_mongodb_connection_string
+```
 
-5. Start backend server
+### 5️⃣ Start backend server
+```bash
 npm run dev
-
-6. In a new terminal, install frontend dependencies
+```
+### 6️⃣ In a new terminal, install frontend dependencies
+```bash
 cd ../FRONTEND
 npm install
+```
 
-7. Start frontend
+### 7️⃣ Start frontend
+```bash
 npm start
-This should open your React app in browser (usually at http://localhost:5173).
+```
+This should open your React app in browser (usually at ```http://localhost:5173```).
 
 --- 
 
@@ -123,21 +193,27 @@ View your events
 
 -	Using user ID as token via custom headers
 -	Dates stored as strings
--  Basic form / field validation (Yup)	
+- Basic form / field validation (Yup)	
 
 ---
 
-## 📦 License & Contributing
-You are free to use, modify, and distribute it for personal or educational use.
+## 📧 Contributing
 
----
+Contributions are welcome. If you want to contribute:
 
-## 📝 Contact
+1. Fork the repo
+2. Create a feature branch `git checkout -b feature/your-feature`
+3. Commit your changes `git commit -m "feat: add ..."`
+4. Push and open a pull request
 
-Portfolio: https://mohdkamran-khan.github.io/KAMRAN-portfolio/
+## 📄 License
 
-E-mail: mohdkamrankhan.dev@gmail.com
+```
+This project is open-source and available under the [MIT License]
+```
 
----
+## 👨🏻‍💻 Author
 
-💡 If you like my work, please ⭐ this repo. Your support inspires me to build more projects! 🚀
+Mohd Kamran Khan | You can reach me at: [mohdkamrankhan.dev@gmail.com]
+
+🌐 **Portfolio:** [mohdkamran-khan.github.io/KAMRAN-portfolio](https://mohdkamran-khan.github.io/KAMRAN-portfolio/)
