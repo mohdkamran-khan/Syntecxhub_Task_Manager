@@ -107,7 +107,7 @@ router.route("/add-event").post(async (req, res) => {
       date: formattedDate,
       user: req.user,
     });
-    res.status(200).send({ message: "Event Added!" });
+    res.status(200).send({ message: "Task Added!" });
   } catch (error) {
     res.status(400).send({ error: error.message });
   }
@@ -124,12 +124,12 @@ router.route("/all-events").get(async (req, res) => {
 
 router
   .route("/event/:id")
-  // Get single event
+  // Get single task
   .get(async (req, res) => {
     try {
       const event = await EventModel.findById(req.params.id);
       if (!event) {
-        return res.status(404).send({ error: "Event not found" });
+        return res.status(404).send({ error: "Task not found" });
       }
       res.status(200).send(event);
     } catch (error) {
@@ -137,7 +137,7 @@ router
     }
   })
 
-  // Update event
+  // Update task
   .put(async (req, res) => {
     try {
       const id = req.params.id;
@@ -156,23 +156,23 @@ router
       );
 
       if (!updatedEvent) {
-        return res.status(404).send({ error: "Event not found" });
+        return res.status(404).send({ error: "Task not found" });
       }
 
-      return res.status(200).send({ message: "Event Updated", updatedEvent });
+      return res.status(200).send({ message: "Task Updated", updatedEvent });
     } catch (error) {
       res.status(400).send({ error: error.message });
     }
   })
 
-  // Delete event
+  // Delete task
   .delete(async (req, res) => {
     try {
       const event = await EventModel.findByIdAndDelete(req.params.id);
       if (!event) {
-        return res.status(404).send({ error: "Event not found" });
+        return res.status(404).send({ error: "Task not found" });
       }
-      return res.status(200).send({ message: "Event Deleted" });
+      return res.status(200).send({ message: "Task Deleted" });
     } catch (error) {
       res.status(400).send({ error: error.message });
     }

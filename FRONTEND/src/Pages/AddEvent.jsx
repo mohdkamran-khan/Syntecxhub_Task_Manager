@@ -64,7 +64,7 @@ const AddEvent = () => {
         <Form className="bg-amber-200 rounded-xl shadow-2xl w-[80%] mx-auto my-10 py-10 px-10">
           <h1 className="text-start flex items-center justify-center text-amber-900 text-2xl font-bold gap-x-2 cursor-context-menu mb-4">
             <MdEventNote />
-            Add Event
+            Add Task
           </h1>
           <div>
             <div>
@@ -79,7 +79,7 @@ const AddEvent = () => {
                   name="title"
                   type="text"
                   className="py-2 px-4 border rounded-xl border-amber-900 w-[80%] m-5"
-                  placeholder="Enter Event Name"
+                  placeholder="Enter Task Name"
                 />
               </div>
               <ErrorMessage
@@ -102,7 +102,7 @@ const AddEvent = () => {
                   name="description"
                   type="text"
                   className="py-2 px-4 border rounded-xl border-amber-900 w-[80%] m-5"
-                  placeholder="Enter Event Description (optional)"
+                  placeholder="Enter Task Description (optional)"
                 />
               </div>
               <ErrorMessage
@@ -124,7 +124,7 @@ const AddEvent = () => {
                   name="location"
                   type="text"
                   className="py-2 px-4 border rounded-xl border-amber-900 w-[80%] m-5"
-                  placeholder="Enter Event Location"
+                  placeholder="Enter Task Location"
                 />
               </div>
               <ErrorMessage
@@ -172,7 +172,7 @@ const AddEvent = () => {
                   htmlFor="date"
                   className="ml-2 text-xl font-bold text-amber-900 text-start"
                 >
-                  Event Date :
+                  Task Date :
                 </label>
                 <Field
                   type="date"
@@ -188,7 +188,7 @@ const AddEvent = () => {
             </div>
 
             <div className="mb-3 text-xl">
-              <Loader isLoading={isLoading} text={"Add Event"} />
+              <Loader isLoading={isLoading} text={"Add Task"} />
             </div>
           </div>
         </Form>

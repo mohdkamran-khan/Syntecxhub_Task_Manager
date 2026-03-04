@@ -17,7 +17,7 @@ const EventView = ({ data, close }) => {
           user: localStorage.getItem("user") || "",
         },
       });
-      toast.success("Event deleted successfully");
+      toast.success("Task deleted successfully");
       fetchAllEvents(); // refresh events list
       close();
     } catch (error) {
@@ -45,7 +45,7 @@ const EventView = ({ data, close }) => {
         onClick={deleteHandler}
         className="mt-4 w-full bg-red-600 text-white px-4 py-2 rounded-lg text-sm shadow hover:bg-red-700 cursor-pointer hover:scale-101 hover:shadow-2xl flex items-center justify-center"
       >
-        Delete Event
+        Delete Task
         <FaTrash className="ml-2 mt-1" />
       </button>
     </>

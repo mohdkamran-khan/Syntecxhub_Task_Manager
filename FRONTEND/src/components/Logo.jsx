@@ -10,7 +10,7 @@ const Logo = () => {
       >
         <BiSolidTimer className="text-4xl text-amber-900" />
         <span className="ml-2 font-bold font-serif text-2xl text-amber-900">
-          Event Tracker
+          Task Manager
         </span>
       </Link>
     </>

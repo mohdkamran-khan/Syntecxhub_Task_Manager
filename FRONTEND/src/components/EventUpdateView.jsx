@@ -168,7 +168,7 @@ const EventUpdateView = ({ data, fetchData, close }) => {
                   htmlFor="date"
                   className="ml-2 text-xl font-bold text-amber-900 text-start"
                 >
-                  Event Date:
+                  Task Date:
                 </label>
                 <Field
                   type="date"
@@ -184,7 +184,7 @@ const EventUpdateView = ({ data, fetchData, close }) => {
             </div>
 
             <div className="mb-3 text-xl">
-              <Loader isLoading={isLoading} text={"Update Event"} />
+              <Loader isLoading={isLoading} text={"Update Task"} />
             </div>
           </div>
         </Form>

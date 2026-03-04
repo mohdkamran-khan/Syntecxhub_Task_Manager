@@ -54,32 +54,32 @@ const Dashboard = () => {
           className="py-2 mt-10 rounded-xl cursor-pointer bg-amber-400 text-amber-900 hover:scale-105 hover:shadow-2xl px-4 h-12 flex items-center justify-center gap-x-2 text-lg font-bold hover:bg-amber-300"
         >
           <MdFormatListBulletedAdd />
-          Add Event
+          Add Task
         </Link>
       </div>
 
       {/* Upcoming Events */}
       <div className="w-[90%] mx-auto p-6 mb-10 bg-amber-400 rounded-xl m-6">
         <h2 className="text-xl font-bold text-amber-900 mb-4">
-          Upcoming Events
+          Upcoming Tasks
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:gird-cols-3 gap-5">
           {upcomingEvents.length > 0 ? (
             upcomingEvents.map((cur, i) => <EventCard data={cur} key={i} />)
           ) : (
-            <p className="text-sm text-amber-700">No upcoming events</p>
+            <p className="text-sm text-amber-700">No upcoming tasks</p>
           )}
         </div>
       </div>
 
       {/* Past Events */}
       <div className="w-[90%] mx-auto p-6 mb-10 bg-amber-200 rounded-xl m-6">
-        <h2 className="text-xl font-bold text-amber-900 mb-4">Past Events</h2>
+        <h2 className="text-xl font-bold text-amber-900 mb-4">Past Tasks</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:gird-cols-3 gap-5">
           {pastEvents.length > 0 ? (
             pastEvents.map((cur, i) => <EventCard data={cur} key={i} />)
           ) : (
-            <p className="text-sm text-amber-700">No past events</p>
+            <p className="text-sm text-amber-700">No past tasks</p>
           )}
         </div>
       </div>
@@ -88,14 +88,14 @@ const Dashboard = () => {
       {filterResults.length === 0 && (
         <div className="col-span-3 text-center">
           <h1 className="text-center text-2xl font-bold text-amber-900 p-10">
-            No Events Have Been Added
+            No Tasks Have Been Added
           </h1>
           <p className="text-sm text-amber-700 mb-5">
-            Add your upcoming events to manage them easily from anywhere
+            Add your upcoming tasks to manage them easily from anywhere
           </p>
           <div className="flex items-center justify-center text-md text-amber-800 cursor-pointer hover:scale-105 hover:shadow-2xl mt-8 mb-5 hover:underline gap-x-1">
             <a href="/add-event" className="cursor-pointer">
-              Add Events
+              Add Tasks
             </a>
             <FaArrowRight className="text-xs" />
           </div>

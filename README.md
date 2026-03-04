@@ -1,17 +1,17 @@
-# Mini Event Tracker
+# Task Manager
 
-A simple, clean & responsive event tracker built with the **MERN** stack.  
-Allows users to create, view, update, delete and search events. Has basic user authentication.
+A simple, clean & responsive task manager built with the **MERN** stack.  
+Allows users to create, view, update, delete and search events. Has user authentication.
 
 ---
 
 ## 🧰 Features
 
-- Add new events (title, description, location, category, date)  
-- View all events
-- Events sorted by date
-- Update or delete events  
-- Search/filter events by title, description.  
+- Add new tasks (title, description, location, category, date)  
+- View all tasks
+- Tasks sorted by date
+- Update or delete tasks  
+- Search/filter tasks by title, description.  
 - User authentication (login / register)  
 - Responsive UI
   
@@ -34,17 +34,17 @@ Allows users to create, view, update, delete and search events. Has basic user a
 
 ---
 
-- Add Event:
+- Add Task:
 <img width="2260" height="1896" alt="localhost_5173_login (2)" src="https://github.com/user-attachments/assets/813f5291-8175-44df-b92c-e1ed8cbfd1e8" />
 
 ---
 
-- View Event:
+- View Task:
 <img width="2260" height="1930" alt="localhost_5173_login (3)" src="https://github.com/user-attachments/assets/de3a2275-f6b6-4d02-83b9-b6144184e771" />
 
 ---
 
-- Edit Event:
+- Edit Task:
 <img width="2880" height="2372" alt="localhost_5173_ (2)" src="https://github.com/user-attachments/assets/901ed9dc-c7c2-4866-b820-5c737770d041" />
 
 ---
@@ -123,7 +123,7 @@ View your events
 
 -	Using user ID as token via custom headers
 -	Dates stored as strings
-- Basic form / field validation (Yup)	
+-  Basic form / field validation (Yup)	
 
 ---
 

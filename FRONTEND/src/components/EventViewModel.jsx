@@ -67,7 +67,7 @@ const EventViewModel = ({ id }) => {
                 className="text-base/7 font-medium text-amber-900 flex items-center justify-between p-2 mb-3"
               >
                 <h1 className="text-2xl cursor-context-menu flex items-center justify-center">
-                  Event {isUpdate ? "Edit" : "Details"}
+                  Task {isUpdate ? "Edit" : "Details"}
                   <button
                     onClick={() => setIsUpdate(!isUpdate)}
                     title="update"
