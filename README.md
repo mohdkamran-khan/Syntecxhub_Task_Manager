@@ -1,7 +1,7 @@
 # Task Manager
 
 A simple, clean & responsive task manager built with the **MERN** stack.  
-Allows users to create, view, update, delete and search events. Has user authentication.
+Allows users to create, view, update, delete and search events with user authentication.
 
 ---
 
